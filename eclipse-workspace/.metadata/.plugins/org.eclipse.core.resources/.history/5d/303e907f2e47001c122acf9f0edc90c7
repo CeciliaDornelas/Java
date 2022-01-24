@@ -1,0 +1,23 @@
+package provafinal;
+
+import java.util.ArrayList;
+
+public class prova_av2 {
+
+	public static void main(String[] args) {
+		String cpf = "00000000000";
+        String nome = "Silvia";
+        String cnpj = "0000000000000";
+        String rg = "0000001";
+
+        ArrayList <String> cliente = new ArrayList<>();
+        cliente.add(cpf);
+        cliente.add(nome);
+        cliente.add(cnpj);        
+        cliente.add(rg);
+        
+        System.out.println(cliente);
+
+	}
+
+}

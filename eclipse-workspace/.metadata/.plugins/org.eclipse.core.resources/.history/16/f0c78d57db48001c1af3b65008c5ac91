@@ -1,0 +1,62 @@
+package provafinal;
+
+import java.util.Date;
+
+public class Conta {
+	private int numero;
+	private Date data_abertura, data_encerramento;
+	private int situacao;
+	private double saldo;
+	private String senha;
+	
+	public Conta() {
+		
+	}
+	public Conta(int numero, Date data_abertura, Date data_encerramento, double saldo, String senha) {
+		this.numero = numero;
+		this.data_abertura = data_abertura;
+		this.data_encerramento = data_encerramento;
+		this.saldo = saldo;
+		this.senha = senha;
+	}
+
+
+	public int getNumero() {
+		return numero;
+	}
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+	public Date getData_abertura() {
+		return data_abertura;
+	}
+	public void setData_abertura(Date data_abertura) {
+		this.data_abertura = data_abertura;
+	}
+	public Date getData_encerramento() {
+		return data_encerramento;
+	}
+	public void setData_encerramento(Date data_encerramento) {
+		this.data_encerramento = data_encerramento;
+	}
+	public int getSituacao() {
+		return situacao;
+	}
+	public void setSituacao(int situacao) {
+		this.situacao = situacao;
+	}
+	public double getSaldo() {
+		return saldo;
+	}
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+	public String getSenha() {
+		return senha;
+	}
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+	
+	
+}

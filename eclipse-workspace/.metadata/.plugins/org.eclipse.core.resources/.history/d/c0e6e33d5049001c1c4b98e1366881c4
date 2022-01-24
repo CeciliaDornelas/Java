@@ -1,0 +1,55 @@
+package provafinal;
+
+import java.util.ArrayList;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		Endereco end1 = new Endereco("rua flores", "cep", "girassol", "raio de sol", 200);
+		Endereco end2 = new Endereco("rua salgados", "cep", "coxinha", "catupiry", 22);
+		
+		Conta cont1 = new Conta(2,"2021-09-10","2022-12-20",200,"112233");
+		Conta cont2 = new Conta(6,"2021-09-10","2022-09-10",200,"11223344");
+		
+		P_fisica pf1 = new P_fisica("cpf","rg","silvia", 200, 1, end1,cont1);
+		P_juridica pj1 = new P_juridica("cnpj","Livia",200,1,end2,cont2);
+		
+		
+		
+		ArrayList<Movimento> movs = new ArrayList();
+		
+		
+		
+		/*if(m.getTipo()==1) {
+			double valor = 200.00;
+			double saldo = c.getSaldo();
+			double res = c.sacar(saldo,valor);
+			c.setSaldo(res);
+			System.out.println(c.getSaldo());
+		}
+		else if(m.getTipo()==2){
+			double valor = 200;
+			double saldo = c.getSaldo();
+			double res = c.depositar(saldo, valor);
+			c.setSaldo(res);
+			System.out.println(c.getSaldo());
+		}
+		else if(m.getTipo()==3){
+			double valor = 200;
+			double saldo_c1 = c.getSaldo();
+			double res = c.tansferir(saldo_c1, valor);
+			c.setSaldo(res);
+			double saldo_c2 = c2.getSaldo();
+			double add = c2.depositar(saldo_c2, valor);
+			c2.setSaldo(add);
+			System.out.println(c.getSaldo());
+			System.out.println(c2.getSaldo());
+			
+		}*/
+		
+	}
+
+}

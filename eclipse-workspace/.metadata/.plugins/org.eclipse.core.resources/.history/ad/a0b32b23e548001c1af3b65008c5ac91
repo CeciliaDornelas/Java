@@ -1,0 +1,64 @@
+package provafinal;
+
+
+public class Conta {
+	private int numero;
+	private String data_abertura, data_encerramento;
+	private int situacao=1;
+	private double saldo;
+	private String senha;
+	
+	public Conta() {
+		
+	}
+	public Conta(int numero, String data_abertura, String data_encerramento, double saldo, String senha) {
+		this.numero = numero;
+		this.data_abertura = data_abertura;
+		this.data_encerramento = data_encerramento;
+		this.saldo = saldo;
+		this.senha = senha;
+	}
+	
+	public static double sacar(double valor) {
+		double saldo = saldo-valor;
+		return saldo;
+	}
+	
+	
+	public int getNumero() {
+		return numero;
+	}
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+	public String getData_abertura() {
+		return data_abertura;
+	}
+	public void setData_abertura(String data_abertura) {
+		this.data_abertura = data_abertura;
+	}
+	public String getData_encerramento() {
+		return data_encerramento;
+	}
+	public void setData_encerramento(String data_encerramento) {
+		this.data_encerramento = data_encerramento;
+	}
+	public int getSituacao() {
+		return situacao;
+	}
+	public void setSituacao(int situacao) {
+		this.situacao = situacao;
+	}
+	public double getSaldo() {
+		return saldo;
+	}
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+	public String getSenha() {
+		return senha;
+	}
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+}

@@ -1,0 +1,47 @@
+package provafinal;
+
+
+public class Movimento {
+	private int tipo;
+	private String data_movimentacao, hora_movimentacao;
+	private double valor;
+	private Pessoa pessoa;
+	
+	public Movimento() {
+		
+	}
+	public Movimento(int tipo, String data_movimentacao, String hora_movimentacao, double valor,Pessoa pessoa) {
+		this.tipo = tipo;
+		this.data_movimentacao = data_movimentacao;
+		this.hora_movimentacao = hora_movimentacao;
+		this.valor = valor;
+		this.pessoa = pessoa;
+	}
+	
+	public int getTipo() {
+		return tipo;
+	}
+	public void setTipo(int tipo) {
+		this.tipo = tipo;
+	}
+	public String getData_movimentacao() {
+		return data_movimentacao;
+	}
+	public void setData_movimentacao(String data_movimentacao) {
+		this.data_movimentacao = data_movimentacao;
+	}
+	public String getHora_movimentacao() {
+		return hora_movimentacao;
+	}
+	public void setHora_movimentacao(String hora_movimentacao) {
+		this.hora_movimentacao = hora_movimentacao;
+	}
+	public double getValor() {
+		return valor;
+	}
+	public void setValor(double valor) {
+		this.valor = valor;
+	}
+	
+	
+}

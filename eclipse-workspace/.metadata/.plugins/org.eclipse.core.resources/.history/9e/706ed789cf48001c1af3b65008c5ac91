@@ -1,0 +1,27 @@
+package provafinal;
+
+public class p_fisica extends pessoa{
+	private String cpf,rg;
+		
+	public p_fisica(String nome, double renda, int situacao endereco endereco) {
+		super(nome,renda,situacao,endereco);
+	}
+	
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public String getRg() {
+		return rg;
+	}
+
+	public void setRg(String rg) {
+		this.rg = rg;
+	}
+	
+	
+}

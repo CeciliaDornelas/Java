@@ -1,0 +1,45 @@
+package provafinal;
+
+public class movimento{
+	private int tipo;
+	private string datamovimentacao;
+}
+public class conta{
+	private int numero;
+	private date data_abertura, data_encerramento;
+	private int situacao = 1;
+	private string senha;
+	private double saldo;
+	
+	public conta(int numero , int situacao, date data_abertura,date data_encerramento, string senha, double saldo){
+        this.numero=numero;
+        this.situacao=situacao;
+        saldo=saldo;
+        this.senha=senha;
+        this.data_abertura=data_abertura;
+        this.data_encerramento=data_encerramento;
+	}
+	
+}
+public abstract class pessoa{
+	
+}
+public abstract class p_fisica extends pessoa{
+	
+}
+public abstract class p_juridica extends pessoa{
+	
+}
+
+public class endereço{
+	
+}
+
+public class banco {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,27 @@
+package provafinal;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		Endereco e = new Endereco("rua flores", "cep", "girassol", "raio de sol", 200);
+		Conta c = new Conta(2,"2021-09-10","2021-09-10",200,"112233");
+		P_fisica pf = new P_fisica("cpf","rg","silvia", 200, 1, e, c);
+		Movimento m = new Movimento(1, "2021-11-18","23:44",200);
+		
+		System.out.println(c.getSituacao());
+		System.out.println(pf.getNome());
+		System.out.println(pf.getEndereco().getCidade());
+		
+		if(m.getTipo()==1) {
+			System.out.println("if");
+		}else if(m.getTipo()==2){
+			System.out.println("else if");
+		}else if(m.getTipo()==3){
+			System.out.println("else");
+		}
+	}
+
+}

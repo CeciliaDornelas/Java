@@ -1,0 +1,36 @@
+package provafinal;
+
+public class Pessoa{
+	public String nome;
+	public double renda;
+	public Endereco endereco;
+	
+	public Pessoa() {
+		
+	}
+	public Pessoa(String nome, double renda, Endereco endereco) {
+		this.nome = nome;
+		this.renda = renda;
+		this.endereco = endereco;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public double getRenda() {
+		return renda;
+	}
+	public void setRenda(double renda) {
+		this.renda = renda;
+	}
+	public Endereco getEndereco() {
+		return endereco;
+	}
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
+	
+}

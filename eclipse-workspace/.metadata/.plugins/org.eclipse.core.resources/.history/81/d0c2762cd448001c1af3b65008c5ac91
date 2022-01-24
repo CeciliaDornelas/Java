@@ -1,0 +1,16 @@
+package provafinal;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		Endereco e = new Endereco("rua flores", "cep", "girassol", "raio de sol", 200);
+		P_fisica pf = new P_fisica("Silvia", 200, 1, e);
+		
+		System.out.println(pf.getNome());
+		System.out.println(pf.getEndereco().getRua());
+	}
+
+}
